@@ -1,0 +1,237 @@
+/*  -------- Global Styles For The Site Starts From Here ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(..//images/bg-main.png);
+    color: rgb(150, 150, 150);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*  -------- Global Styles For The Site Starts Ends Here ---------- */
+
+/*  -------- Custom Styles For The Index Page Starts From Here -------  */
+
+/*  Navbar Styles Start From Here  */
+
+.collapse.navbar-collapse {
+    background: #fff;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.navbar-nav {
+    max-width: 700px;
+    width: 100%;
+    padding: 0px 15px;
+    justify-content: space-between;
+}
+
+.nav-item {
+    min-width: 90px;
+    text-align: center;
+}
+
+body .navbar-light .nav-item.active .nav-link {
+    background: rgb(227, 118, 65);
+    color: #fff;
+    font-size: 18px;
+}
+
+body .navbar-light .nav-item .nav-link {
+    padding: 16px 0;
+}
+
+/*  Navbar Styles Ends From Here  */
+
+/*  Social icons styles starts from here  */
+
+.social-icons-list span {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*  Social icons styles ends from here  */
+
+.carousel-wrapper {}
+
+.business-name {
+    font-size: 48px;
+    color: #282828;
+    text-transform: uppercase;
+}
+
+.business-slogan {
+    font-size: 16px;
+    color: #6E6E6E;
+    text-transform: uppercase;
+    line-height: 11px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 0;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    opacity: 0;
+}
+
+#carouselControls {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    max-height: 450px;
+}
+
+.welcome-title {
+    text-transform: uppercase;
+}
+
+.welcome-text {
+    color: #5C5C5C;
+    padding: 0px 42px;
+    line-height: 28px;
+}
+
+/* Custom styles for the our services section starts here  */
+
+.our-services-wrapper .services-title {
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.our-service-item {
+    padding-left: 75px;
+}
+
+.read-more-btn {
+    background: #DB733F;
+    color: #fff;
+    font-weight: bold;
+    padding: 1px 7px;
+    font-size: 14px;
+}
+
+.read-more-btn:hover {
+    color: #fff;
+}
+
+.checkmark-container {
+    position: absolute;
+    left: 0;
+}
+
+.checkmark-container .checkmark {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+}
+
+/* Custom styles for the our gallery section ends here  */
+
+.our-gallery-title {
+    text-transform: uppercase;
+}
+
+.view-more-btn {
+    padding: 7px 30px;
+    color: #fff;
+    background: #DB733F;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 0px 0px #606060;
+}
+
+.view-more-btn:hover {
+    color: #fff;
+}
+
+.gallery-text {
+    padding: 0 15px;
+}
+
+/* Custom styles for the our gallery section ends here  */
+
+/* Footer styles start here */
+
+.footer {
+    background: url(../images/footer-bg.png);
+    padding: 23px 0;
+}
+
+.footer ul li a {
+    border-right: 1px solid rgb(150, 150, 150);
+}
+
+.footer ul li:last-of-type a {
+    border-right: none;
+}
+
+.footer ul li.active a {
+    color: #DB733F;
+}
+
+/* Footer styles end here */
+
+/*  -------- Custom Styles For The Index Page Ends From Here -------  */
+
+/*  -------- Responsive Styles For the Index Page Starts From Here -------  */
+
+/*  Extra large devices (large desktops, 1200px and up)  */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 980px;
+    }
+}
+
+/*  Small devices (landscape phones, less than 768px)  */
+@media(max-width:767px) and (min-width:320px) {
+    .navbar-nav {
+        padding: 0;
+    }
+    .business-name, .welcome-title, .services-title, .our-gallery-title {
+        font-size: 26px !important;
+    }
+    .welcome-text {
+        padding: 0;
+    }
+    .checkmark-container {
+        left: 8px;
+    }
+    .our-service-item h3 {
+        font-size: 20px;
+    }
+    .gallery-text {
+        text-align: center;
+    }
+    .footer-wrapper {
+        flex-wrap: wrap;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/*  Medium devices (tablets, less than 992px)  */
+@media(max-width:991px) and (min-width:768px) {
+    .footer-wrapper {
+        font-size: 13px;
+    }
+}
+
+/*  -------- Responsive Styles For the Index Page Ends From Here -------  */
